@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -26,13 +28,65 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">
+      </p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <table style="width:100%">
+        <tr id="table-text">
+          <th id="time-col">Time</th>
+          <th id="plan-col" contenteditable="true">Plan</th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">09:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">10:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">11:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">12:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">13:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">14:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">15:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">16:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
+        <tr>
+          <th id="time-col">17:00</th>
+          <th id="plan-col" contenteditable="true"></th>
+          <th id="save-col">Save</th>
+        </tr>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

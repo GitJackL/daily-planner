@@ -4,6 +4,14 @@ body {
   line-height: 1;
 }
 
+table, th, td {
+border: 1px solid black;
+font-size: 24px;
+height: 110px;
+text-align: center;
+}
+
+
 textarea {
   background: transparent;
   border: none;
@@ -68,4 +76,14 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+#time-col, #save-col {
+  width: 15%;
+}
+
+#plan-text {
+
+  height: 100%;
+  width: 200px;
 }
