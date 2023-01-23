@@ -3,7 +3,6 @@ window.setInterval(function () {
   $('#currentDay').html(moment().format('ddd DD/MM/YYYY H:mm:ss'))
 }, 1000);
 
-var timeNow = document.querySelector("colorTime");
 var timeNow = moment().hours();
 
 
@@ -48,6 +47,7 @@ if (timeNow === 14) {
 
 if (timeNow === 15) {
   $("#colorTimeThree").css({"backgroundColor": "green"});
+  $("#colorTimeTwo").css({"backgroundColor": "red"});
   $("#colorTimeOne").css({"backgroundColor": "red"});
   $("#colorTimeTwelve").css({"backgroundColor": "red"});
   $("#colorTimeEleven").css({"backgroundColor": "red"});
@@ -58,6 +58,7 @@ if (timeNow === 15) {
 if (timeNow === 16) {
   $("#colorTimeFour").css({"backgroundColor": "green"});
   $("#colorTimeThree").css({"backgroundColor": "red"});
+  $("#colorTimeTwo").css({"backgroundColor": "red"});
   $("#colorTimeOne").css({"backgroundColor": "red"});
   $("#colorTimeTwelve").css({"backgroundColor": "red"});
   $("#colorTimeEleven").css({"backgroundColor": "red"});
@@ -69,6 +70,7 @@ if (timeNow === 17) {
     $("#colorTimeFive").css({"backgroundColor": "green"});
     $("#colorTimeFour").css({"backgroundColor": "red"});
     $("#colorTimeThree").css({"backgroundColor": "red"});
+    $("#colorTimeTwo").css({"backgroundColor": "red"});
     $("#colorTimeOne").css({"backgroundColor": "red"});
     $("#colorTimeTwelve").css({"backgroundColor": "red"});
     $("#colorTimeEleven").css({"backgroundColor": "red"});
@@ -76,4 +78,11 @@ if (timeNow === 17) {
     $("#colorTimeNine").css({"backgroundColor": "red"});
     };
     
-    
+
+var planCol = document.getElementById("plan-col-nine");
+var saveCol = document.getElementById("save-col-nine");
+var planSaved = document.getElementById("plan-col-nine");
+
+saveCol.onclick = function() {
+  console.log(planCol);
+}
