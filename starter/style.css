@@ -93,37 +93,17 @@ textarea {
   background-color: orchid;
 }
 
-#colorTimeNine {
-  background-color: aliceblue 
+#plan-col {
+width:70%;
+  white-space: pre-wrap;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
-#colorTimeTen {
-  background-color: aliceblue;
+.save-button-col {
+  cursor: pointer;
 }
 
-#colorTimeEleven {
-  background-color: aliceblue;
-}
-
-#colorTimeTwelve {
-  background-color: aliceblue;
-}
-
-#colorTimeOne {
-  background-color: aliceblue;
-}
-
-#colorTimeTwo {
-  background-color: aliceblue;
-}
-
-#colorTimeThree{
-background-color: aliceblue;
-}
-
-#colorTimeFour {
-  background-color: aliceblue;
-}
-#colorTimeFive {
-  background-color: aliceblue;
+.save-button-col:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
