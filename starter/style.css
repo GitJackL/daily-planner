@@ -83,7 +83,6 @@ textarea {
 }
 
 #plan-text {
-
   height: 100%;
   width: 200px;
 }
@@ -106,4 +105,8 @@ width:70%;
 
 .save-button-col:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.save-button-col:active {
+  background-color: #6d0000;
 }
